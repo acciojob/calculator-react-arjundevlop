@@ -25,7 +25,7 @@ const App = ()=>{
         setInputValue("");
     }
     return(
-        <div className='calc-div'>
+        <div className='Calculator'>
         <h1>Calculator</h1>
         <input type='text' value={inputvalue} readOnly></input>
         <div className="btn-div">
@@ -33,16 +33,16 @@ const App = ()=>{
         <button onClick={renderInput}>/</button>
         <button onClick={renderInput}>*</button>
         <button onClick={renderInput}>-</button>
-        <button onClick={renderInput}>7</button>
-        <button onClick={renderInput}>8</button>
-        <button onClick={renderInput}>9</button>
+        <button onClick={renderInput} id="btn-7">7</button>
+        <button onClick={renderInput} id="btn-8">8</button>
+        <button onClick={renderInput} id="btn-9">9</button>
         <button onClick={renderInput}>+</button>
-        <button onClick={renderInput}>4</button>
-        <button onClick={renderInput}>5</button>
-        <button onClick={renderInput}>6</button>
-        <button onClick={renderInput}>1</button>
-        <button onClick={renderInput}>2</button>
-        <button onClick={renderInput}>3</button>
+        <button onClick={renderInput} id="btn-4">4</button>
+        <button onClick={renderInput} id="btn-5">5</button>
+        <button onClick={renderInput} id="btn-6">6</button>
+        <button onClick={renderInput} id="btn-1">1</button>
+        <button onClick={renderInput} id="btn-2">2</button>
+        <button onClick={renderInput} id="btn-3">3</button>
         <button onClick={calculateInput}>=</button>
         <button onClick={renderInput}>0</button>
         <button onClick={renderInput}>.</button>
